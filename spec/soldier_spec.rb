@@ -1,9 +1,10 @@
  require 'soldier'
+ require 'weapon'
 
 describe Soldier do
-	it 'should initialize a new object' do
-	new_sol = Soldier.new('bill')
-	expect(new_sol).to be_an_instance_of Soldier
+	it 'should initialize a Soldier object' do
+		new_sol = Soldier.new('bill')
+		expect(new_sol).to be_an_instance_of Soldier
 	end
 
 	it 'should be able to name your soldier' do
@@ -22,3 +23,9 @@ describe Soldier do
 	end
 end
 
+describe Weapon do
+	it 'should initialize a new weapon object' do
+		new_wep = Weapon.new('uzi')
+		expect(new_wep).to be_an_instance_of Weapon
+	end
+end

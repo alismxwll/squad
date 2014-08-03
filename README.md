@@ -1,5 +1,5 @@
 Solder readme.
 
-Currently only initalizes an empty Soldier object.
+Currently initalizes a Soldier object with a set of default stats.
 
 Andrew Robert Dean Akers
