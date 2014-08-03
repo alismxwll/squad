@@ -33,4 +33,12 @@ describe Weapon do
 		new_wep = Weapon.new('uzi')
 		expect(new_wep.weapon_name).to eq 'uzi'
 	end
+
+	it 'should initialize the Weapon with default base default stats' do
+		new_wep = Weapon.new('uzi')
+		expect(new_wep.damage).to eq 10
+		expect(new_wep.rate_fire).to eq 1
+		expect(new_wep.crit_chance).to eq [0, 0.01]
+		expect(new_wep.burn_chance).to eq [0, 0.01]
+	end
 end
