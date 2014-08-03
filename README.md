@@ -1,4 +1,4 @@
-Solder readme.
+Soldier readme.
 
 Currently:
 

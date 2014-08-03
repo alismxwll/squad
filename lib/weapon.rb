@@ -3,7 +3,7 @@ class Weapon
 		@weapon_name = weapon_name
 		@damage = 10
 		@rate_fire = 1
-		@crit_chance = [0, 0.01] #If I were to implement functionality to increase the chances I could replace[0] and mulitply the numbers in the array together?
+		@crit_chance = [0, 0.01] #If I were to implement functionality to increase the chances I mulitply the numbers in the array together?
 		@burn_chance = [0, 0.01]
 	end
 
@@ -20,7 +20,8 @@ class Weapon
 	end
 
 	def crit_chance
-		@crit_chance		
+		@crit_chance #write code to change the index[0] to increase crit chance
+						#write code to be able to multiply those numbers together
 	end
 
 	def burn_chance
