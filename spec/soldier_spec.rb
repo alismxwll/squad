@@ -9,7 +9,7 @@ describe Soldier do
 
 	it 'should be able to name your soldier' do
 		new_sol = Soldier.new('bill')
-		expect(new_sol.name).to eq 'bill'
+		expect(new_sol.soldier_name).to eq 'bill'
 	end
 
 	it 'should initialize the Soldier with default stats' do
@@ -27,5 +27,10 @@ describe Weapon do
 	it 'should initialize a new weapon object' do
 		new_wep = Weapon.new('uzi')
 		expect(new_wep).to be_an_instance_of Weapon
+	end
+
+	it 'should be able to name your new weapon' do
+		new_wep = Weapon.new('uzi')
+		expect(new_wep.weapon_name).to eq 'uzi'
 	end
 end

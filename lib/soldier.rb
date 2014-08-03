@@ -1,7 +1,7 @@
 class Soldier
 
-	def initialize(name)
-		@name = name
+	def initialize(soldier_name)
+		@soldier_name = soldier_name
 		@health = 100
 		@strength = 5
 		@agility = 5
@@ -10,8 +10,8 @@ class Soldier
 		@dexterity = 5
 	end
 	
-	def name
-		@name		
+	def soldier_name
+		@soldier_name		
 	end
 
 	def health
