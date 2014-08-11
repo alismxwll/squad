@@ -21,6 +21,13 @@ describe Soldier do
 	expect(new_sol.wisdom).to eq 5
 	expect(new_sol.dexterity).to eq 5
 	end
+
+	it 'adds a weapon to the soldiers weapon array' do
+		test_soldier = Soldier.new('Bill')
+		test_weapon = Weapon.new('Uzi')
+		test_soldier.add_weapon(test_weapon)
+		expect(test_soldier.weapons.first.weapon_name).to eq 'Uzi'
+	end
 end
 
 describe Weapon do

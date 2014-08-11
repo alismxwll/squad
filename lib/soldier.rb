@@ -1,5 +1,7 @@
 class Soldier
 
+	attr_accessor :soldier_name, :health, :strength, :agility, :intelligence, :wisdom, :dexterity, :weapons
+
 	def initialize(soldier_name)
 		@soldier_name = soldier_name
 		@health = 100
@@ -8,34 +10,11 @@ class Soldier
 		@intelligence = 5
 		@wisdom = 5
 		@dexterity = 5
-	end
-	
-	def soldier_name
-		@soldier_name		
+		@weapons = []
 	end
 
-	def health
-		@health		
-	end
-
-	def strength
-		@strength		
-	end
-
-	def agility
-		@agility		
-	end
-
-	def intelligence
-		@intelligence
-	end
-
-	def wisdom
-		@wisdom		
-	end
-
-	def dexterity
-		@dexterity
+	def add_weapon(weapon_to_add)		
+		@weapons << weapon_to_add
 	end
 end
 
