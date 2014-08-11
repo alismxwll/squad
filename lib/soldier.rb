@@ -20,6 +20,14 @@ class Soldier
 	def remove_weapon(weapon_to_remove)
 		@weapons.delete(weapon_to_remove)		
 	end
+
+	def list_weapons
+		list_weapon_names = []
+		@weapons.each do |weapon|
+			list_weapon_names << weapon.weapon_name
+		end
+		list_weapon_names
+	end
 end
 
 
