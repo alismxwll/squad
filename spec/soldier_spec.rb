@@ -2,6 +2,30 @@
  require 'weapon'
 
 describe Soldier do
+
+	describe '.all' do
+	it 'starts out with an empty array of soldiers' do
+		expect(Soldier.all).to eq []
+		end
+	end
+
+	describe 'add_soldier' do
+		it 'add soldiers to the array of soldiers' do
+			test_soldier = Soldier.new('Janey')
+			test_soldier.add_soldier
+			expect(Soldier.all).to eq [test_soldier]
+		end
+	end
+
+	describe 'remove_soldiers' do
+		it 'removes a soldier from your array' do
+		test_soldier = Soldier.new('Janey')
+		test_soldier.add_soldier
+		test_soldier.remove_soldiers
+		expect(Soldier.all).to eq []
+		end
+	end
+
 	it 'should initialize a Soldier object' do
 		new_sol = Soldier.new('bill')
 		expect(new_sol).to be_an_instance_of Soldier
