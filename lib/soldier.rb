@@ -16,6 +16,10 @@ class Soldier
 	def add_weapon(weapon_to_add)		
 		@weapons << weapon_to_add
 	end
+
+	def remove_weapon(weapon_to_remove)
+		@weapons.delete(weapon_to_remove)		
+	end
 end
 
 

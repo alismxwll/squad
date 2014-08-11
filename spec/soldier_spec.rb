@@ -28,6 +28,13 @@ describe Soldier do
 		test_soldier.add_weapon(test_weapon)
 		expect(test_soldier.weapons.first.weapon_name).to eq 'Uzi'
 	end
+
+	it 'removes a weapon from the soldiers weapon array' do
+		test_soldier = Soldier.new('Roger')
+		test_weapon = Weapon.new('Uzi')
+		test_soldier.remove_weapon(test_weapon)
+		expect(test_soldier.weapons).to eq []
+	end
 end
 
 describe Weapon do
